@@ -42,15 +42,15 @@ def atteindre_le_questionnaire(driver):
     bouton_start_quiz.click()
 
 
-def prochain_module(driver):
-    bouton_prochain_module = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable(
-            (By.XPATH, "//a[contains(@class, 'text-default-90') and contains(text(), 'Prochain module')]"))
-    )
-    if not bouton_prochain_module.is_displayed():
-        scroll_to_element(driver, bouton_prochain_module)
+# def prochain_module(driver):
+#     bouton_prochain_module = WebDriverWait(driver, 10).until(
+#         EC.element_to_be_clickable(
+#             (By.XPATH, "//a[contains(@class, 'text-default-90') and contains(text(), 'Prochain module')]"))
+#     )
+#     if not bouton_prochain_module.is_displayed():
+#         scroll_to_element(driver, bouton_prochain_module)
 
-    bouton_prochain_module.click()
+#     bouton_prochain_module.click()
 
 
 def repondre_aleatoirement(driver):
@@ -97,8 +97,8 @@ def main():
     atteindre_le_questionnaire(driver)
     print("Questionnaire atteint 1")
 
-    prochain_module(driver)
-    print("Prochain module atteint")
+    # prochain_module(driver)
+    # print("Prochain module atteint")
 
     # Répondre aux questions aléatoirement à l'infini puis appuyer sur le bouton "Suivant"
     for i in range(99999999999):
