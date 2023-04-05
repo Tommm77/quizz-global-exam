@@ -27,3 +27,17 @@ Remplacez les variables `USERNAME` et `PASSWORD` par votre nom d'utilisateur et 
 ```python
 USERNAME = ''
 PASSWORD = ''
+```
+
+## Utilisation
+
+1. Ouvrez votre terminal ou invite de commande.
+2. Accédez au répertoire où se trouve le script.
+3. Exécutez `python script.py` pour lancer le script.
+4. Le script se connectera automatiquement à votre compte et répondra de manière aléatoire aux questions du quiz.
+5. Pour arrêter le script, appuyez sur `CTRL+C` dans le terminal ou fermez la fenêtre du navigateur.
+
+## Remarque
+
+Ce script est destiné à des fins éducatives uniquement. L'utilisation de ce script pour tricher sur un site de quiz en ligne peut être contraire aux conditions d'utilisation du site et peut entraîner des conséquences indésirables. Utilisez ce script à vos propres risques.
+
